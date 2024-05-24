@@ -1,0 +1,25 @@
+.profilePageContainer{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 0;
+    align-items: center;
+}
+
+.profileImage{
+    width: 40vh;
+    height: 40vh;
+    border-radius: 50%;
+}
+
+.profileContents{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.profileContents h2{
+    margin-top: 3vh;
+}
+
+
