@@ -24,7 +24,7 @@ class HomeController extends Controller
     {
         $search = $request->searched;
         $pins = Pin::where('pin_title', 'LIKE', '%' . $search . '%')->paginate(12);
-        return view('Homepage.home', compact('pins'));
+        return view('Homepage.home', compact('pins', 'search'));
     }
 
     /**
@@ -54,6 +54,6 @@ class HomeController extends Controller
     {
         $search = $request->searched;
         $pins = Pin::where('pin_title', 'LIKE', '%' . $search . '%')->paginate(12);
-        return view('Homepage.admin_home', compact('pins'));
+        return view('Homepage.admin_home', compact('pins', 'search'));
     }
 }

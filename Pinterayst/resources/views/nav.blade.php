@@ -26,7 +26,7 @@
             <form action="{{ route('search') }}" method="GET" style="align-items: center; display: flex">
                 @csrf
 
-                <input type="text" name="searched" placeholder="Search" id="searchField">
+                <input type="text" name="searched" placeholder="Search" value="{{$search ?? ""}}" id="searchField">
                 <img src="{{ asset('images/searchIcon.jpg') }}" id="searchBtn" alt="">
                 <button type="submit" style="display: none" id="submitBtn">search</button>
             </form>

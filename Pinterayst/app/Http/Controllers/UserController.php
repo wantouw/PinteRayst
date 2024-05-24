@@ -189,6 +189,6 @@ class UserController extends Controller
     {
         $search = $request->searched;
         $pins = Pin::where('pin_title', 'LIKE', '%' . $search . '%')->paginate(12);
-        return view('Homepage.guest_home', compact('pins'));
+        return view('Homepage.guest_home', compact('pins', 'search'));
     }
 }
