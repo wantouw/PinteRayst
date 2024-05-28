@@ -1,4 +1,4 @@
-# Pinterayst
+# PinteRayst
 A Laravel web application inspired by Pinterest. Uses local database.
 
 ## How to run
